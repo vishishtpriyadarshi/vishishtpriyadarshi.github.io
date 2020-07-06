@@ -1,11 +1,4 @@
 /*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
     Description: This file contains all the styles associated with the page
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
@@ -26,7 +19,104 @@
         11. Optional Section Styles
         12. Media Queries
 */
-
+.card
+{
+	flex-direction: row;
+	border: none;
+	margin-bottom: 79px;
+    background: #f6f4f9;
+}
+.card:last-child
+{
+	margin-bottom: 0px;
+}
+.card-img-top
+{
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.card_image
+{
+	width: 50%;
+}
+.card_image::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: rgba(69, 43, 120, 0);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.card:hover
+{
+	box-shadow: 0px 26px 38px rgba(0,0,0,0.5);
+    -webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.card-body
+{
+	width: 50%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	margin-top: 6px;
+    color: #838383;
+}
+.card-header
+{
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 0.2em;
+	color: #838383;
+	text-transform: uppercase;
+	border-radius: auto;
+	padding: 0px;
+	background: transparent;
+	border-bottom: none;
+	margin-bottom: -1px;
+}
+.card-title
+{
+	font-size: 24px;
+	font-weight: 400;
+	color: #2e2e2e;
+	margin-bottom: 12px;
+    line-height: 1.5;
+}
+.card:hover .card-title
+{
+	color: #005681;
+}
+.card-text
+{
+	line-height: 1.86;
+}
+.card-link
+{
+	margin-top: 24px;
+    font-size: 14px;
+	font-weight: 600;
+	color: #005681;
+	text-transform: uppercase;
+}
+.card-link a
+{
+	
+}
+.card-subtitle {
+    color: black;
+}
 /*
     ------------------------
     ----- 1. Variables -----
